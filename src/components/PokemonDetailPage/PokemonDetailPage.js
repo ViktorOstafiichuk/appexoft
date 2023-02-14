@@ -26,9 +26,12 @@ useEffect(() => {
 
     return (
         <div className={css.details}>
-            {pokemonDetail && <PokemonDetail key={id} pokemonDetail={pokemonDetail}/>}
-            {pokemonDetail && <ul>Pokemon abilities: {pokemonDetail.ability}</ul>}
-            {pokemonDetail && <ul>Pokemon type: {pokemonDetail.type}</ul>}
+            <div>
+                {pokemonDetail && <PokemonDetail key={id} pokemonDetail={pokemonDetail}/>}
+                {pokemonDetail && <ul>Pokemon abilities: {pokemonDetail.ability}</ul>}
+                {pokemonDetail && <ul>Pokemon type: {pokemonDetail.type}</ul>}
+            </div>
+
         </div>
     );
 };

@@ -1,6 +1,8 @@
 .button > a > h3 {
     align-items: center;
-    width: 200px;
+    width: 100%;
+
+
     appearance: none;
     background-color: #FCFCFD;
     border-radius: 4px;
@@ -28,6 +30,10 @@
     white-space: nowrap;
     will-change: box-shadow,transform;
     font-size: 18px;
+}
+
+.button > a {
+    width: 100%;
 }
 
 .button > a > h3:focus {
