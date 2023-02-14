@@ -1,4 +1,4 @@
-import {urls} from "../urls";
+import {urls} from "../../config/urls";
 
 export default function FetchService(endpoint) {
     this.getAllData = (page) => fetch(`${urls.base}/${endpoint}${page}`)

@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 
-import {urls} from "../../config/urls";
-import FetchService from "../../config/fetch.services/fetch.services";
-import {Pokemon} from "../Pocemon/Pokemon";
 import {Outlet, useSearchParams} from "react-router-dom";
+import {Pokemon} from "../Pocemon/Pokemon";
+import {urls} from "../../config/urls";
+import FetchService from "../../services/fetch.services/fetch.services";
 import css from './wrap.module.css';
 
 const Pokemons = () => {
@@ -23,7 +23,7 @@ const Pokemons = () => {
           setPrev(value.previous)
           setNext(value.next)
       })
-    }, [query])
+    }, [query]);
 
     const prevPage = () => {
         setQuery(value => ({page:value.get('page')-12}))

@@ -1,6 +1,7 @@
-import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import FetchService from "../../config/fetch.services/fetch.services";
+
+import {useParams} from "react-router-dom";
+import FetchService from "../../services/fetch.services/fetch.services";
 import {urls} from "../../config/urls";
 import {PokemonDetail} from "../PokemonDetail/PokemonDetail";
 import css from './details.module.css'
